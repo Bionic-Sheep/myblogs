@@ -1,7 +1,8 @@
 <!-- _sidebar.md -->
 
-- [数据结构与算法](/general/algorithm/README.md)
-  - 数据结构
+- [数据结构与算法](/algorithm/README.md)
+  - 数组
+    - [滑动窗口](/algorithm/滑动窗口.md)
     - [stack](/general/algorithm/data-structures/stack/README.zh-CN.md)
     - [queue](/general/algorithm/data-structures/queue/README.zh-CN.md)
     - list
@@ -13,7 +14,13 @@
     - [heap](/general/algorithm/data-structures/heap/README.zh-CN.md)
     - [hash-table](/general/algorithm/data-structures/hash-table/README.md)
     - [graph](/general/algorithm/data-structures/graph/README.zh-CN.md)
-  - 算法
+  - 链表
+  - 字符串
+    - 
+  - 二叉树
+  - 回溯
+  - 贪心
+  - 动态规划
     - [排序算法](/general/algorithm/algorithms/sorting.md)
 - [设计模式](/general/design-pattern/README.md)
 - 网络
