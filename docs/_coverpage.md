@@ -4,4 +4,4 @@
 
 
 
-[开始使用 Let Go](/README.md)
+[Let Go](/README.md)

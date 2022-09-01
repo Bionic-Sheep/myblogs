@@ -1,4 +1,4 @@
 <!-- _navbar.md -->
 
 * 链接到我
-  * [Github地址](https://github.com/YSGStudyHards)
+  * [Github地址](https://github.com/Bionic-Sheep)
