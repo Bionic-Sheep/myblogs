@@ -9,6 +9,7 @@
   - 链表
     - [链表简介](/algorithm/链表简介.md)
   - 字符串
+    - [字符串](algorithm/字符串.md)
   - 二叉树
   
     - [二叉树](/algorithm/二叉树总结)
