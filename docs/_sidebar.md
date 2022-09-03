@@ -7,6 +7,7 @@
     - [双指针](/algorithm/双指针.md)
     - [二分查找](/algorithm/二分查找.md)
   - 链表
+    - [链表简介](/algorithm/链表简介.md)
   - 字符串
   - 二叉树
   
