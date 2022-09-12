@@ -21,6 +21,10 @@
 - Java
   
   - [Java基础](/Java/Java基础.md)
+  - [数据类型转换](/java/类型转换.md)
+  - [集合框架方法](/java/集合框架方法.md)
+  - [集合框架原理](/Java/集合框架原理.md)
+  - [ArrayList的扩容机制](/Java/ArrayList的扩容机制.md)
   
 - 深入理解Java虚拟机
   

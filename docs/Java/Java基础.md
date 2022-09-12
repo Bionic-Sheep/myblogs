@@ -173,6 +173,39 @@ class Bank1{
 
 懒汉：延迟对象加载，线程不安全
 
+要想实现线程安全的懒汉式单例模式
+
+双重检查加锁机制
+
+加锁是耗费资源的事，在加锁前，先判断实例是否存在，如果不存在，则加锁，并且在创建实例前再次判断，这是因为在加锁前就需要再次检查
+
+增加volatile 关键字在实例变量，因为需要在bank变量在发生变化后需要及时将结果刷新到主内存，对其他线程可见
+
+```java
+public class Bank_ {
+    // 私有化构造器
+    private Bank_(){}
+
+    // 增加volatile 关键字，因为需要在bank变量在发生变化后需要及时将结果刷新到主内存，对其他线程可见
+    private static volatile Bank_ bank = null;
+
+    public static Bank_ getBank(){
+        if(bank == null) { //因为加锁耗费资源，在加锁前先检查是否为空，如果为空，加锁，创建实例，再判断是否为空
+            synchronized (Bank_.class) { //加锁
+                if (bank == null) {
+                    bank = new Bank_(); // 懒汉式
+                }
+            }
+        }
+        return bank;
+    }
+}
+```
+
+
+
+
+
 有关单例模式更详细的内容见下：
 
 [菜鸟教程](https://m.runoob.com/design-pattern/singleton-pattern.html)
@@ -212,13 +245,9 @@ class Bank1{
 1. 方法的重写和重载
 2. 子类对象的多态性：父类的引用指向子类的对象 `Person p1 = new Man();`
 
-多态的应用：虚拟方法调用：编译时，认为调用的方法是父类的，但是当**[运行时，实际执行的是子类重写父类的方法](https://www.notion.so/80d317a2d1bb4c10bcdb25f2a9246625)**；注意：多态中方法的调用：编译看左边，运行看右边；
+多态的应用：虚拟方法调用：编译时，认为调用的方法是父类的，但是当**运行时，实际执行的是子类重写父类的方法**；注意：多态中方法的调用：编译看左边，运行看右边；
 
 前提是：拥有继承关系和方法重写
-
-多态的应用：数据类型转换
-
-[多态的应用：类型转换 (1)](https://www.notion.so/1-719acfd0a3a6454096dbec81b1cb15df)
 
 
 
