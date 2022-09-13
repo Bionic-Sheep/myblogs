@@ -32,7 +32,7 @@
 
 数组大小规定后是不可改变的，当我们不停的添加数据，会进行扩容，在`add`操作方法中观察
 
-![Untitled](ArrayList%E7%9A%84%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6%20afd6aef104df44ef83d406bd6caae361/Untitled%204.png)
+![Untitled](https://cdn.jsdelivr.net/gh/Bionic-Sheep/typora/images/Untitled%204.png)
 
 `ensureExplicitCapacity` 判断是否进行扩容， `grow`是扩容的关键
 
